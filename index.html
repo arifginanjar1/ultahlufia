@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="icon.png">
+  <title>HBD Sayang 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Intro -->
+  <div id="intro" class="intro-screen">
+    <!-- Container stiker -->
+    <div id="intro-stickers"></div>
+
+    <p class="intro-text">Haloo sayanggg 💖</p>
+    <div class="love-btn" onclick="startLove()">❤️</div>
+    <p class="intro-sub">Coba pencet love nya</p>
+  </div>
+
+  <!-- Background -->
+  <img src="background.jpg" alt="background" class="background" />
+
+  <!-- Kotak Teks -->
+  <div class="text-box">
+    <span id="onlytext"></span>
+  </div>
+
+  <!-- Tombol Prev/Next -->
+  <div class="nav-buttons">
+    <button id="prevBtn" onclick="prevKalimat()">&#10094;</button>
+    <button id="nextBtn" onclick="nextKalimat()">&#10095;</button>
+  </div>
+
+  <!-- Ending -->
+  <div id="ending" class="ending-screen">
+    <h2>💖 Terima kasih sudah membaca 💖</h2>
+    <p>Semoga kita selalu bersama ya!</p>
+    <div class="gallery">
+      <img src="foto1.png" alt="foto1">
+      <img src="foto2.png" alt="foto2">
+    </div>
+    <button class="replay-btn" onclick="replayWeb()">Ulangi Lagi</button>
+  </div>
+
+  <!-- Backsound -->
+  <audio id="backsound" src="backsound.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
